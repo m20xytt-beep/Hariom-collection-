@@ -1,12 +1,21 @@
 const shopPhone="9001257658";
 const seed=[
-{id:1,name:"Everyday Oxford Shirt",cat:"Shirts",price:999,image:"",sizes:"S, M, L, XL, XXL, 3XL"},
-{id:2,name:"Essential Cotton T-Shirt",cat:"T-Shirts",price:599,image:"",sizes:"S, M, L, XL, XXL, 3XL"},
-{id:3,name:"Classic Fit Denim",cat:"Jeans",price:1299,image:"",sizes:"S, M, L, XL, XXL, 3XL"},
-{id:4,name:"Smart Casual Trousers",cat:"Pants",price:1099,image:"",sizes:"S, M, L, XL, XXL, 3XL"},
-{id:5,name:"Traditional Everyday Kurta",cat:"Kurtas",price:899,image:"",sizes:"S, M, L, XL, XXL, 3XL"},
-{id:6,name:"Layered Winter Jacket",cat:"Jackets",price:1799,image:"",sizes:"S, M, L, XL, XXL, 3XL"}
-];
+{id:1,name:"Classic Casual Shirt",cat:"Shirts",price:549,image:"",sizes:"S, M, L, XL, XXL, 3XL"},
+{id:2,name:"Checked Pattern Shirt",cat:"Shirts",price:549,image:"",sizes:"S, M, L, XL, XXL, 3XL"},
+{id:3,name:"Solid Formal Shirt",cat:"Shirts",price:549,image:"",sizes:"S, M, L, XL, XXL, 3XL"},
+{id:4,name:"Printed Casual Shirt",cat:"Shirts",price:549,image:"",sizes:"S, M, L, XL, XXL, 3XL"},
+{id:5,name:"Basic Round-Neck T-Shirt",cat:"T-Shirts",price:399,image:"",sizes:"S, M, L, XL, XXL, 3XL"},
+{id:6,name:"Printed Graphic T-Shirt",cat:"T-Shirts",price:449,image:"",sizes:"S, M, L, XL, XXL, 3XL"},
+{id:7,name:"Classic Blue Jeans",cat:"Jeans",price:849,image:"",sizes:"28, 30, 32, 34, 36, 38"},
+{id:8,name:"Black Denim Jeans",cat:"Jeans",price:849,image:"",sizes:"28, 30, 32, 34, 36, 38"},
+{id:9,name:"Slim Fit Jeans",cat:"Jeans",price:849,image:"",sizes:"28, 30, 32, 34, 36, 38"},
+{id:10,name:"Regular Fit Jeans",cat:"Jeans",price:849,image:"",sizes:"28, 30, 32, 34, 36, 38"},
+{id:11,name:"Smart Casual Pants",cat:"Pants",price:699,image:"",sizes:"28, 30, 32, 34, 36, 38"},
+{id:12,name:"Everyday Cotton Kurta",cat:"Kurtas",price:699,image:"",sizes:"S, M, L, XL, XXL, 3XL"},
+{id:13,name:"Lightweight Jacket",cat:"Jackets",price:1199,image:"",sizes:"S, M, L, XL, XXL, 3XL"},
+{id:14,name:"Everyday Shorts",cat:"Shorts",price:349,image:"",sizes:"S, M, L, XL, XXL"},
+{id:15,name:"Men's Fashion Accessories",cat:"Accessories",price:199,image:"",sizes:"One size"}
+]
 let products=JSON.parse(localStorage.getItem("hc_products")||"null")||seed;
 let cart=JSON.parse(localStorage.getItem("hc_cart")||"[]"),category="All",customer=JSON.parse(localStorage.getItem("hc_customer")||"null");
 const $=id=>document.getElementById(id), money=n=>"₹"+Number(n).toLocaleString("en-IN");
