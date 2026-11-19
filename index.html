@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="HARIOM COLLECTION — Wear That You Feel">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="style.css">
+  <title>HARIOM COLLECTION</title>
+</head>
+<body>
+<header class="top">
+  <div class="brandmark">HC</div>
+  <div><div class="brand">HARIOM COLLECTION</div><div class="tag">WEAR THAT YOU FEEL</div></div>
+  <button class="iconbtn" id="cartOpen" aria-label="Open cart">Bag <span id="cartCount">0</span></button>
+</header>
+<section class="hero">
+  <div class="eyebrow">MEN'S FASHION · EVERYDAY STYLE</div>
+  <h1>Find your<br><em>everyday look.</em></h1>
+  <p>Fresh styles. Comfortable fits. Made for your confidence.</p>
+  <a href="#shop" class="lightbtn">EXPLORE COLLECTION</a>
+</section>
+<main id="shop">
+  <div class="sectionhead"><div><div class="eyebrow dark">CURATED FOR YOU</div><h2>Shop collection</h2></div><span class="muted" id="productTotal"></span></div>
+  <div class="filters" id="filters"></div>
+  <div class="products" id="products"></div>
+</main>
+<section class="perks">
+  <div><b>01</b><span>Easy ordering</span></div><div><b>02</b><span>Local & all-India delivery</span></div><div><b>03</b><span>WhatsApp support</span></div>
+</section>
+<footer>
+  <div class="brand">HARIOM COLLECTION</div><p>Wear That You Feel</p>
+  <p class="small">Sanjay Bishnoi & Shubhash Godara</p>
+  <p class="small">Dungar Ba Complex, Gaur Ka Chowk, Ajit Road, Samdari</p>
+  <p class="small">Instagram: @hariomcollection524</p>
+  <p class="small">© HARIOM COLLECTION</p>
+</footer>
+
+<div class="shade" id="shade"></div>
+<aside class="drawer" id="cartDrawer">
+  <div class="drawerhead"><h2>Your bag</h2><button class="close" data-close>✕</button></div>
+  <div id="cartItems" class="cartitems"></div>
+  <div class="cartbottom"><div class="total"><span>Subtotal</span><b id="cartTotal">₹0</b></div><button class="primary" id="checkout">ORDER ON WHATSAPP</button><p class="tiny">Final availability and delivery charges will be confirmed by the shop.</p></div>
+</aside>
+
+<div class="modal" id="accountModal">
+  <div class="modalbox"><button class="close right" data-close>✕</button><div class="eyebrow dark">YOUR DETAILS</div><h2>Welcome</h2><p class="muted">Enter your name and mobile number to continue.</p>
+    <label>Name<input id="custName" placeholder="Your name"></label>
+    <label>Mobile number<input id="custPhone" inputmode="tel" maxlength="10" placeholder="10-digit mobile number"></label>
+    <button class="primary" id="saveAccount">CONTINUE</button>
+  </div>
+</div>
+
+<div class="modal" id="adminModal">
+  <div class="modalbox"><button class="close right" data-close>✕</button><div class="eyebrow dark">SHOP MANAGEMENT</div><h2>Admin access</h2><p class="muted">Demo admin screen. Secure owner login will be connected with the backend in the next setup step.</p>
+    <label>Admin passcode<input id="adminPass" type="password" placeholder="Enter demo passcode"></label>
+    <button class="primary" id="adminLogin">OPEN ADMIN</button>
+    <div id="adminArea" class="adminarea hidden">
+      <h3>Add product</h3><label>Product name<input id="pName" placeholder="e.g. Classic shirt"></label>
+      <div class="two"><label>Price (₹)<input id="pPrice" type="number" placeholder="999"></label><label>Category<select id="pCat"><option>Shirts</option><option>T-Shirts</option><option>Jeans</option><option>Pants</option><option>Kurtas</option><option>Jackets</option><option>Accessories</option><option>Shorts</option></select></label></div>
+      <label>Image URL (optional)<input id="pImage" placeholder="https://..."></label>
+      <label>Sizes<input id="pSizes" value="S, M, L, XL, XXL, 3XL"></label>
+      <button class="primary" id="addProduct">ADD PRODUCT</button>
+      <p class="tiny">Demo mode saves products only in this browser on this phone.</p>
+    </div>
+  </div>
+</div>
+<button class="adminfab" id="adminOpen" aria-label="Admin">⚙</button>
+<script src="app.js"></script>
+</body></html>
